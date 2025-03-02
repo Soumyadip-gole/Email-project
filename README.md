@@ -1,68 +1,90 @@
-# CS50 Final Project - simple email website
+# **Email Website**  
 
-#### Description: A simple email website
+## **Description**  
+A simple email website that allows users to send and receive emails within the platform. The website ensures smooth communication between registered users with a minimalistic and easy-to-use interface.  
 
-The website allows you to send emails to another person registered on the website.
+---
 
-#### TECHNOLOGY USED:
-- Node JS
-- html
-- sqlite3
-- css
-- other small libraries or packages
+## **Technologies Used**  
+- Node.js  
+- HTML  
+- CSS  
+- SQLite3  
+- Additional libraries and packages for enhanced functionality  
 
-## HOW THE WEBPAGE WORKS:
-The website is very simple to use. u can create your account with just 3 basic things:
+---
 
-- username(email)
-- password
-- confirmation password
+## **How the Website Works**  
+The website is designed for simplicity and ease of use. Users can create an account with just three basic details:  
 
-once the account is created u will be redirected to the homepage of the website which will be initially blank due to no other emails.
+- **Username (Email)**  
+- **Password**  
+- **Confirmation Password**  
 
-#### WHAT CAN U DO HERE:
-- inbox - once you log in the page u see is the inbox it includes all the mails sent to u
+Once registered, users are redirected to the homepage, where emails sent to them will appear in their inbox.  
 
-- compose -  now u can send a email to someone else with the help of the compose option.once the email is sent the page will be redirected to the sent history
+---
 
-- view email - if someone sends a mail to u , it will be displayed at ur homepage the email can be viewed with the view email option from where u will be redirected to the details of the email.
+## **Features**  
 
-- reply to emails - a mail that has been sent to u can be viewed and replied immediately. the sender recipient and subject is auto completeed for the users better experience
+### **📥 Inbox**  
+- Displays all received emails after logging in.  
 
-### Sessions
-The webpage uses sessions to confirm that user is registered.
+### **✉️ Compose**  
+- Allows users to send an email to another registered user.  
+- Once an email is sent, users are redirected to the **Sent** folder to view their sent emails.  
 
-### REFERENCE
-This project is heavily referneced to the cs50 finance of pset 9. Many things have been reused to keep the porject simple and easy to use.
-the helpers.py was very helpful for the faster completion of the project
+### **📄 View Emails**  
+- All received emails appear on the homepage.  
+- Users can click **"View Email"** to see the email details.  
 
-### Database
+### **↩️ Reply to Emails**  
+- Users can instantly reply to an email.  
+- The recipient, sender, and subject fields are auto-filled for convenience.  
 
-Database stores all users and emails. There are 2 tables one which has all the registered users and the other one which includes all the emails sent using this website.
+---
 
-## Possible improvements
+## **User Sessions**  
+- The website uses session management to ensure users are authenticated and registered before accessing their inbox.  
 
-As all applications this one can also be improved. Possible improvements:
+---
 
-- The password strength should be measured and should be asked for better password if required
-- Ability to change account details
-- The option to delete the mails
-- Mark the emails as important or spam
-- check if the email the mail is being sent to exists or not
+## **Database Structure**  
+The database consists of two main tables:  
 
-#### files
-It uses 7 files for redirecting from one page to another
+1. **Users Table** – Stores all registered users.  
+2. **Emails Table** – Stores all emails sent and received through the platform.  
 
-- apology - the website redirects to this file when a problem is caused while entering the details or the password is incorrect.
+---
 
-- compose - it is redirected to this when u are sending a mail to another user
+## **Possible Improvements**  
 
-- email - it is redirected to this when clicked on view mail for the details of the email
+Like any application, this project has room for enhancements. Some potential improvements include:  
 
-- login - the login page
+- ✅ Enforcing stronger password requirements for better security.  
+- 🔄 Allowing users to update their account details.  
+- 🗑️ Adding an option to delete emails.  
+- ⭐ Implementing a feature to mark emails as important or spam.  
+- 📧 Verifying whether the recipient's email exists before sending a message.  
 
-- register - the register page
+---
 
-- reply - it is redirected tot his when clicked on the reply option while viewing a mail
+## **File Structure & Functionality**  
+The project consists of seven main files, each handling different functionalities:  
 
-- index - it is the homepage of the emails that u have recieved
+1. **`apology`** – Redirects users here when an error occurs, such as incorrect login credentials.  
+2. **`compose`** – Handles the email composition process.  
+3. **`email`** – Displays email details when a user views a message.  
+4. **`login`** – The login page for authentication.  
+5. **`register`** – Handles user registration.  
+6. **`reply`** – Manages the email reply feature.  
+7. **`index`** – The homepage that displays all received emails.  
+
+---
+
+## **Reference**  
+This project is heavily inspired by **CS50 Finance (Pset 9)**. Several concepts and functions have been reused to ensure simplicity and efficiency. The **helpers.py** file played a crucial role in accelerating the development process.  
+
+---
+
+🚀 **This project showcases my ability to build a functional email website using web development technologies.**
