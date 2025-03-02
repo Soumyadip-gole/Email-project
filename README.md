@@ -1,7 +1,5 @@
 # CS50 Final Project - simple email website
 
-#### Video Demo:  <https://youtu.be/-Ue-_N6UxmA>
-
 #### Description: A simple email website
 
 The website allows you to send emails to another person registered on the website.
